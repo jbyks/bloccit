@@ -1,1 +1,11 @@
-
+.social-btn {
+  position: absolute;
+  padding: 15px;
+  margin: 10px;
+  border-width: 1px;
+  border-color: white;
+}
+.social-btn:hover {
+  color: green;
+  border-color: green;
+}
