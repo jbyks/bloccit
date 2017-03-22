@@ -7,6 +7,8 @@ require 'random_data'
   )
 end
 
+Post.find_or_create_by!(title: "World Peace scheduled for 0600 today", body: "Today is the day it finally ends. One world, multiple communities, all at peace.")
+
 posts = Post.all
 
 100.times do
@@ -15,6 +17,8 @@ posts = Post.all
     body: RandomData.random_paragraph
   )
 end
+
+Comment.find_or_create_by!(body: "Finally!!!")
 
 puts "Seed finished"
 puts "#{Post.count} posts created"
