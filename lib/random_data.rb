@@ -23,4 +23,13 @@ module RandomData
     letters[0, rand(3..8)].join
   end
 
+  def self.random_boolean
+    selector = rand(0..1)
+    if selector == 0
+      false
+    else
+      true
+    end
+  end
+
 end
